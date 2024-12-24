@@ -1,0 +1,3 @@
+# Incorrect useEffect Return Value
+
+This example demonstrates a common error in React's `useEffect` hook where the return value is not a proper cleanup function.  The return value of `useEffect` should be a function that cleans up any side effects (timers, subscriptions, etc.)  In this case, the return value is simply the `count` state variable, which is not a function and will not perform cleanup.
